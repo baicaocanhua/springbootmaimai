@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-csrf/spring-mvc-csrf.iml" filepath="$PROJECT_DIR$/spring-boot-csrf/spring-mvc-csrf.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootdev/springbootdev.iml" filepath="$PROJECT_DIR$/springbootdev/springbootdev.iml" />
     </modules>
   </component>
