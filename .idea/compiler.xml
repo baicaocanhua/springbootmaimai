@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springbootdev" />
         <module name="spring-mvc-csrf" />
+        <module name="springbootdev" />
+        <module name="springbootlog2web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-mvc-csrf" target="1.5" />
       <module name="springbootdev" target="1.8" />
+      <module name="springbootlog2web" target="1.8" />
       <module name="springbootwebsocket" target="1.8" />
     </bytecodeTargetLevel>
   </component>

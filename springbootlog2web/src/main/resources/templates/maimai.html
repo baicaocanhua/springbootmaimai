@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var Socket = new WebSocket("ws://localhost:8084/websocket");
+    Socket.onopen = function () {
+
+        Socket.send("发送一条测试数据");
+
+    };
+    Socket.onmessage = function (ev) {
+        console.log(ev);
+    }
+</script>
+</body>
+</html>
