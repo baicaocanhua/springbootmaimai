@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-csrf/spring-mvc-csrf.iml" filepath="$PROJECT_DIR$/spring-boot-csrf/spring-mvc-csrf.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootdev/springbootdev.iml" filepath="$PROJECT_DIR$/springbootdev/springbootdev.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootlog2web/springbootlog2web.iml" filepath="$PROJECT_DIR$/springbootlog2web/springbootlog2web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websocket/websocket.iml" filepath="$PROJECT_DIR$/websocket/websocket.iml" />
     </modules>
   </component>
 </project>

@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/springbootdev/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-csrf/pom.xml" />
         <option value="$PROJECT_DIR$/springbootlog2web/pom.xml" />
+        <option value="$PROJECT_DIR$/websocket/pom.xml" />
       </list>
     </option>
   </component>
