@@ -6,14 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springbootlog2web" />
-        <module name="springbootlog" />
-        <module name="websocket" />
-        <module name="spring-mvc-csrf" />
+        <module name="demo" />
         <module name="springbootdev" />
+        <module name="websocket" />
+        <module name="openoffice" />
+        <module name="spring-mvc-csrf" />
+        <module name="springbootlog" />
+        <module name="springbootlog2web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+      <module name="openoffice" target="1.8" />
       <module name="spring-mvc-csrf" target="1.5" />
       <module name="springbootdev" target="1.8" />
       <module name="springbootlog" target="1.8" />
@@ -23,6 +27,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
+      <module name="openoffice" options="-parameters" />
       <module name="springbootdev" options="-parameters" />
       <module name="springbootlog" options="-parameters" />
       <module name="springbootlog2web" options="-parameters" />
