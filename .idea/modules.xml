@@ -4,11 +4,14 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../SpringBootAopDemo/demo.iml" filepath="$PROJECT_DIR$/../SpringBootAopDemo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/openoffice/openoffice.iml" filepath="$PROJECT_DIR$/openoffice/openoffice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qiyeweixin/qiyeweixin.iml" filepath="$PROJECT_DIR$/qiyeweixin/qiyeweixin.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-csrf/spring-mvc-csrf.iml" filepath="$PROJECT_DIR$/spring-boot-csrf/spring-mvc-csrf.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootdev/springbootdev.iml" filepath="$PROJECT_DIR$/springbootdev/springbootdev.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootlast/springbootlast.iml" filepath="$PROJECT_DIR$/springbootlast/springbootlast.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootlog/springbootlog.iml" filepath="$PROJECT_DIR$/springbootlog/springbootlog.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootlog2web/springbootlog2web.iml" filepath="$PROJECT_DIR$/springbootlog2web/springbootlog2web.iml" />
       <module fileurl="file://$PROJECT_DIR$/websocket/websocket.iml" filepath="$PROJECT_DIR$/websocket/websocket.iml" />
+      <module fileurl="file://D:/wxwork/wxwork.iml" filepath="D:/wxwork/wxwork.iml" />
     </modules>
   </component>
 </project>

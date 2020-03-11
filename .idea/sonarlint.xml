@@ -3,6 +3,5 @@
   <component name="SonarLintProjectSettings">
     <option name="bindingEnabled" value="true" />
     <option name="projectKey" value="sprongboot-maimai" />
-    <option name="serverId" value="test" />
   </component>
 </project>

@@ -11,6 +11,8 @@ public class SpringbootdevApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootdevApplication.class, args);
+
+		
 	}
 
     @RequestMapping("/")
