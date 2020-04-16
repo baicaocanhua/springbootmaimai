@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- <bean id="testA" class="com.maimai.springboot.entity.TestA">
+         <constructor-arg index="0" ref="testB"></constructor-arg>
+     </bean>
+
+     <bean id="testB" class="com.maimai.springboot.entity.TestB">
+         <constructor-arg index="0" ref="testC"></constructor-arg>
+     </bean>
+
+     <bean id="testC" class="com.maimai.springboot.entity.TestC">
+         <constructor-arg index="0" ref="testA"></constructor-arg>
+     </bean>-->
+
+
+    <bean id="testA" class="com.maimai.springboot.entity.TestA" scope="singleton">
+        <property name="testB" ref="testB"></property>
+    </bean>
+
+    <bean id="testB" class="com.maimai.springboot.entity.TestB" scope="singleton">
+        <property name="testC" ref="testC"></property>
+    </bean>
+
+    <bean id="testC" class="com.maimai.springboot.entity.TestC" scope="singleton">
+        <property name="testA" ref="testA"></property>
+    </bean>
+</beans>

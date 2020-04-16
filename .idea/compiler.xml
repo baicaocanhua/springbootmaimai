@@ -8,13 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
         <module name="springbootdev" />
-        <module name="qiyeweixin" />
         <module name="websocket" />
+        <module name="wxwork" />
         <module name="openoffice" />
         <module name="spring-mvc-csrf" />
         <module name="springbootlog" />
         <module name="springbootlog2web" />
-        <module name="wxwork" />
+        <module name="qiyeweixin" />
         <module name="springbootlast" />
       </profile>
     </annotationProcessing>
@@ -22,7 +22,7 @@
       <module name="demo" target="1.8" />
       <module name="openoffice" target="1.8" />
       <module name="qiyeweixin" target="1.8" />
-      <module name="spring-mvc-csrf" target="1.5" />
+      <module name="spring-mvc-csrf" target="8" />
       <module name="springbootdev" target="1.8" />
       <module name="springbootlast" target="1.8" />
       <module name="springbootlog" target="1.8" />

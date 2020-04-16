@@ -1,6 +1,7 @@
 package com.maimai.springbootlast.entity;
 
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -9,8 +10,9 @@ import java.util.Objects;
  * @author: zxb
  * @create: 2020-03-11 16:55
  **/
-public class Gril {
+public class Gril implements Serializable {
 
+    private static final long serialVersionUID = 8836888875699038000L;
     @NotNull(message = "这个id必传")
     private Integer id;
 

@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../SpringBootAopDemo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ueditorsourcecode" vcs="Git" />
     <mapping directory="D:/wxwork" vcs="Git" />
   </component>
 </project>
