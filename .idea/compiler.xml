@@ -12,15 +12,21 @@
         <module name="wxwork" />
         <module name="openoffice" />
         <module name="spring-mvc-csrf" />
-        <module name="springbootlog" />
         <module name="springbootlog2web" />
+        <module name="springbootlog" />
+        <module name="mybatisplus" />
+        <module name="mybatisgenerator" />
         <module name="qiyeweixin" />
+        <module name="openofficelocal" />
         <module name="springbootlast" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
+      <module name="mybatisgenerator" target="1.8" />
+      <module name="mybatisplus" target="1.8" />
       <module name="openoffice" target="1.8" />
+      <module name="openofficelocal" target="1.8" />
       <module name="qiyeweixin" target="1.8" />
       <module name="spring-mvc-csrf" target="8" />
       <module name="springbootdev" target="1.8" />
@@ -34,7 +40,10 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="mybatisgenerator" options="-parameters" />
+      <module name="mybatisplus" options="-parameters" />
       <module name="openoffice" options="-parameters" />
+      <module name="openofficelocal" options="-parameters" />
       <module name="qiyeweixin" options="-parameters" />
       <module name="springbootdev" options="-parameters" />
       <module name="springbootlast" options="-parameters" />

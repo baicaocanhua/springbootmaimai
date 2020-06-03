@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../SpringBootAopDemo/demo.iml" filepath="$PROJECT_DIR$/../SpringBootAopDemo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatisgenerator/mybatisgenerator.iml" filepath="$PROJECT_DIR$/mybatisgenerator/mybatisgenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatisplus/mybatisplus.iml" filepath="$PROJECT_DIR$/mybatisplus/mybatisplus.iml" />
       <module fileurl="file://$PROJECT_DIR$/openoffice/openoffice.iml" filepath="$PROJECT_DIR$/openoffice/openoffice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openofficelocal/openofficelocal.iml" filepath="$PROJECT_DIR$/openofficelocal/openofficelocal.iml" />
       <module fileurl="file://$PROJECT_DIR$/qiyeweixin/qiyeweixin.iml" filepath="$PROJECT_DIR$/qiyeweixin/qiyeweixin.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-csrf/spring-mvc-csrf.iml" filepath="$PROJECT_DIR$/spring-boot-csrf/spring-mvc-csrf.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootdev/springbootdev.iml" filepath="$PROJECT_DIR$/springbootdev/springbootdev.iml" />

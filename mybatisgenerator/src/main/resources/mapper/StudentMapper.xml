@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.maimai.mybatisgenerator.dao.StudentMapper">
+  <resultMap id="BaseResultMap"  type="com.maimai.mybatisgenerator.entity.Student">
+    <id column="stuID" jdbcType="CHAR" property="stuid" />
+    <result column="stuName" jdbcType="VARCHAR" property="stuname" />
+    <result column="major" jdbcType="VARCHAR" property="major" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    stuID, stuName, major
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from student
+    where stuID = #{stuid,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from student
+    where stuID = #{stuid,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.maimai.mybatisgenerator.entity.Student">
+    insert into student (stuID, stuName, major
+      )
+    values (#{stuid,jdbcType=CHAR}, #{stuname,jdbcType=VARCHAR}, #{major,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.maimai.mybatisgenerator.entity.Student">
+    insert into student
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="stuid != null">
+        stuID,
+      </if>
+      <if test="stuname != null">
+        stuName,
+      </if>
+      <if test="major != null">
+        major,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="stuid != null">
+        #{stuid,jdbcType=CHAR},
+      </if>
+      <if test="stuname != null">
+        #{stuname,jdbcType=VARCHAR},
+      </if>
+      <if test="major != null">
+        #{major,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.maimai.mybatisgenerator.entity.Student">
+    update student
+    <set>
+      <if test="stuname != null">
+        stuName = #{stuname,jdbcType=VARCHAR},
+      </if>
+      <if test="major != null">
+        major = #{major,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where stuID = #{stuid,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.maimai.mybatisgenerator.entity.Student">
+    update student
+    set stuName = #{stuname,jdbcType=VARCHAR},
+      major = #{major,jdbcType=VARCHAR}
+    where stuID = #{stuid,jdbcType=CHAR}
+  </update>
+</mapper>

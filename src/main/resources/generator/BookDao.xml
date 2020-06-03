@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generate.BookDao">
+  <resultMap id="BaseResultMap" type="generate.Book">
+    <id column="BID" jdbcType="CHAR" property="bid" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    BID, title, author
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from book
+    where BID = #{bid,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from book
+    where BID = #{bid,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" keyColumn="BID" keyProperty="bid" parameterType="generate.Book" useGeneratedKeys="true">
+    insert into book (title, author)
+    values (#{title,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="BID" keyProperty="bid" parameterType="generate.Book" useGeneratedKeys="true">
+    insert into book
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="title != null">
+        title,
+      </if>
+      <if test="author != null">
+        author,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="author != null">
+        #{author,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="generate.Book">
+    update book
+    <set>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="author != null">
+        author = #{author,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where BID = #{bid,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="generate.Book">
+    update book
+    set title = #{title,jdbcType=VARCHAR},
+      author = #{author,jdbcType=VARCHAR}
+    where BID = #{bid,jdbcType=CHAR}
+  </update>
+</mapper>
